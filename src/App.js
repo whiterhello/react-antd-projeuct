@@ -1,7 +1,8 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Login from './page/login'
-import Admin from './page/admin'
+import Home from './page/home'
+
 
 function App() {
   return (
@@ -12,9 +13,8 @@ function App() {
             component={Login}
           ></Route>
           <Route
-            exact
             path="/"
-            component={Admin}
+            component={Home}
           ></Route>
        </Switch>
     </Router>
